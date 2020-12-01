@@ -1,0 +1,41 @@
+#include <cs50.h>
+#include <stdio.h>
+
+void ball(int b);
+
+int main(void)
+{
+    //bola superior
+    int b = get_int("magnitude:");
+    ball(b);
+
+    //corpo
+     for(int k=0; k<b; k++)
+    {
+        for(int l=0; l<2*b-1; l++)
+        {
+            printf(" ");
+        }
+        for(int p=0; p<5*b; p++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+
+    //bola inferior
+    ball(b);
+}
+
+//funçao ball
+void ball(int b)
+{
+    for(int i=0; i<b; i++)
+    {
+        for(int j=0; j<2*b; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
