@@ -35,4 +35,5 @@ void ball(int b)
         }
         printf("\n");
     }
+     printf("THE MORE BALL THE MORE ROOM FOR PEE TO BE STORED.\n");
 }
